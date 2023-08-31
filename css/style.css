@@ -8,14 +8,15 @@ header{
     justify-content: space-around;
     align-items: center;
     padding: 60px 0px;
-    margin-bottom: 30px;
+    margin-bottom: 5.5rem;
+/*    background-color: black;*/
 }
 nav ul{
     display: flex;
     list-style: none;
 
 }
-nav ul li a{            /*podria ser solo "a"*/
+nav ul li a{            /*podria ser solo "a", pero a los otros a del footer habria que cambiarles el color a blanco*/
     text-decoration: none;
     cursor: pointer;
     color: black;
@@ -34,4 +35,20 @@ a:hover{
     border: none;
     cursor: pointer;
     padding: 15px 40px;
+}
+.section1{
+    display: flex;
+    align-items: center;
+    margin: 0 60px;
+
+}
+.section1 div{
+    text-align: right;
+}
+.titulo{
+    font-size: 3rem;
+}
+.texportada{
+    font-size: 1.5rem;
+    margin: 40px 0px;
 }
