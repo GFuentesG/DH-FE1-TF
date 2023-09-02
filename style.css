@@ -11,14 +11,13 @@
     align-items: center;
     display: flex;
 }
-
+ /*Estilos Footer*/
 .content-text-bottom p {
     font-size: 40px;
     padding-left: 100px;
     font-weight: bold;
     line-height: 47px;
     width: 500px;
-    
 }
 
 footer {
@@ -30,6 +29,11 @@ footer {
 .content-footer{
     display: flex;
     justify-content: space-between;
+}
+.content-ft-politicas{
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
 }
 
 .ft-logo-sn {
@@ -59,8 +63,73 @@ footer {
     border: none;
     width: 63px;
     color: white;
+    margin-left: 10px;
 }
 
 .copyright {
     text-align: end;
+    color: #8C8C94;
+    font-size: 12.5px;
+}
+
+/*Estilos smartphones*/
+@media(max-width:767px){
+
+    .content-text-bottom{
+        background-color: #3CDDF3;
+    }
+
+    .content-text-bottom p {
+        padding-left: 0px;
+        width: 210px;
+        text-align: center;
+        margin: auto;
+    }
+
+    footer {
+        padding: 30px 50px;
+    }
+
+    .ft-logo-politicas {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .content-footer{
+        flex-direction: column-reverse;
+    }
+
+    .content-footer div{
+        padding: 10px;
+    }
+
+    .ft-inbox input{
+        width: 200px;
+    }
+
+    .ft-inbox {
+        text-align: center;
+    }
+
+    .ft-logo-sn {
+        text-align: center;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+    .ft-sn{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .copyright{
+        text-align: center;
+    }
+
+    .content-ft-politicas{
+        width: auto;
+    }
+
+    
+
+    
 }
