@@ -4,6 +4,73 @@
     box-sizing: border-box;
 }
 
+.content-columns-one{
+    background-color: #FAFAFA;
+    padding: 20px 40px
+}
+
+.columns-one-section, .descriptions {
+    display: flex;
+}
+
+.columns-one-section {
+    justify-content: center;
+}
+.descriptions{
+    flex-direction: column;
+}
+
+.number-title{
+    display: flex;
+}
+
+.number-title a {
+    padding: 10px 25px;
+    background-color: #8B48BF;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.number-title p {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #323851;
+}
+
+.descriptions > p {
+    width: 400px;
+    margin-left: 80px;
+    color: #B3B2B7;
+}
+
+
+.content-text-one{
+    height: 224px;
+    background-color: #8B48BF;
+    color: white;
+    align-items: center;
+    display: flex;
+}
+
+.text-one {
+    font-size: 40px;
+    padding-left: 100px;
+    font-weight: bold;
+    line-height: 47px;
+    width: 1200px
+    
+}
+
+.text-two {
+    font-size: 16px;
+    padding: 100px;
+      
+    
+}
+
 .content-text-bottom{
     height: 224px;
     background-color: #8B48BF;
@@ -11,7 +78,7 @@
     align-items: center;
     display: flex;
 }
- /*Estilos Footer*/
+
 .content-text-bottom p {
     font-size: 40px;
     padding-left: 100px;
@@ -19,7 +86,7 @@
     line-height: 47px;
     width: 500px;
 }
-
+/*Estilos Footer*/
 footer {
     background-color: #1E1E26;
     color: white;
