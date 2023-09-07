@@ -17,7 +17,7 @@ Diana Gutierrez:
 
 Gustavo Fuentes:
 * Header
-* Section1
+* Contenedor1 (seccion1)
 * Section3
 
 Cada uno realizo el codigo HTML y CSS de sus secciones respectivamente, se uso git para registrar los avances, y github como repositorio remoto para compartir y al final unir la informacion.

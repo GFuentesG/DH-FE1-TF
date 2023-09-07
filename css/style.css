@@ -1,30 +1,28 @@
-@font-face {
-    font-family: BeVietnam;
-    src: url(/fonts/BeVietnam-Medium.ttf);  /* me parece que es la que mas se acerca */
-}
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+/* trate de colocar como variable un color, pero la sentencia no es reconocida*/
+/*--colorgris: rgb(177, 177, 177); */
+
 body{
-    font-family: BeVietnam, sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 60px 0px;
+    padding: 40px 0;
     margin-bottom: 5.5rem;
-/*    background-color: black;*/
 }
 nav ul{
     display: flex;
     list-style: none;
-
 }
-nav ul li a{            /*podria ser solo "a", pero a los otros a del footer habria que cambiarles el color a blanco*/
+nav ul li a{
     text-decoration: none;
     cursor: pointer;
     color: black;
@@ -34,7 +32,7 @@ li:last-child{
     margin-right: 0;
 }
 a:hover{
-    color: gray;
+    color: rgb(177, 177, 177);/* color: var(--colorgris);*/
 }
 .contacto-more{
     background-color: #8B48BF;
@@ -43,56 +41,44 @@ a:hover{
     border: none;
     cursor: pointer;
     padding: 15px 40px;
-    font-size: 16px;  /* para ver opiniones */
+    font-size: 16px;
     transition: background-color 0.5s ease;
 }
 .contacto-more:hover{
     background-color: #8B48BFB2;
 }
-
+.contenedor1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .section1{
+    width: 90%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin: 0 60px;
 }
-.section1 div{
+.derecha,.izquierda{
+    width: 40%;
+}
+.derecha{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.titulo,.texportada,.buttoncontacto-more{
     text-align: right;
 }
 .titulo{
-    font-size: 2.5rem;
+    font-weight: 700;
+    font-size: 2.8rem;
 }
 .texportada{
-    font-size: 1.5rem;
-    margin: 40px 0px;
+    font-size: 1.2rem;
 }
-.texportada p{
-    padding: 5px;
+.imagenintro img{
+    max-width: 100%;
+    height: auto; 
 }
-
-@media(max-width:768px){
-    nav, .contacto-superior{         
-        display: none;
-    }
-    .section1{
-        flex-direction: column;
-    }
-    .tarjetas{
-        flex-direction: column;
-        align-items: center;
-    }
-    .tarjetab,.tarjetac{
-        display: none;
-    }
-    header::after{
-        content: "\2630";
-        font-size: 35px;
-        font-weight: bold;
-        cursor: pointer; 
-    }
-}
-
-
 
 .mejoresdelmes, .more{
     margin: 150px 0;
@@ -102,7 +88,7 @@ a:hover{
 }
 .tarjetas{
     display: flex;
-    justify-content: center; /*se apreciaria bien tambien con space-around*/
+    justify-content: center;
     height: 150px;
     margin: 40px;
 }
@@ -110,23 +96,65 @@ a:hover{
     position: relative;
     width: 450px;
     text-align: center;
-    background-color: #FAFAFA;
+    background-color: #FAFAFA; /*el color rgb (249, 249, 249) no es notorio*/
     padding: 10px;
     height: 250px;
-/*    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;  */
 }
 .tarjeta h3{
     margin: 60px 0 30px;
 }
 .tarjeta img{
     width: 70px;
- /*   margin: auto;   */
     position: absolute;
     top: -12.5%;
     left: 42.5%;
+}
+
+@media(max-width:480px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10%;
+    }
+    nav, .contacto-superior{         
+        display: none;
+    }
+    header::after{
+        content: "\2630";
+        font-size: 35px;
+        font-weight: bold;
+        cursor: pointer; 
+    }
+    .section1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .derecha,.izquierda{
+        width: 90%;
+    }
+    .titulo{
+        font-weight: 700;
+        font-size: 2rem;
+        margin-left: 40px;
+    }
+    .texportada{
+        margin: 20px 0;
+        font-size: 1rem;
+    }
+
+    .tarjetas{
+        flex-direction: column;
+        align-items: center;
+    }
+    .tarjetab,.tarjetac{
+        display: none;
+    }
+    .mejoresdelmes, .more{
+        margin: 60px 0 100px;
+    }
+    .mejoresdelmes{
+        font-size: 1.3rem;
+    }
 }
 
 
