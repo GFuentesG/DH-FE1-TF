@@ -29,13 +29,13 @@
     background-color: #8B48BF;
     border-radius: 30px;
     color: white;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .number-title p {
     display: flex;
     align-items: center;
-    font-weight: bold;
+    font-weight: 500;
     margin-left: 10px;
     color: #323851;
 }
@@ -58,7 +58,7 @@
 .text-one {
     font-size: 40px;
     padding-left: 100px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 47px;
     width: 1200px
     
@@ -66,9 +66,7 @@
 
 .text-two {
     font-size: 16px;
-    padding: 100px;
-      
-    
+    padding: 100px;    
 }
 
 .content-text-bottom{
@@ -82,7 +80,7 @@
 .content-text-bottom p {
     font-size: 40px;
     padding-left: 100px;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 47px;
     width: 500px;
 }
@@ -140,7 +138,42 @@ footer {
 }
 
 /*Estilos smartphones*/
-@media(max-width:767px){
+@media(max-width:480px){
+
+    .columns-one-section{
+        display: block;
+    }
+
+    .descriptions > p{
+        width: auto;
+        margin-right: 20px;
+    }
+    .descriptions{
+        margin-bottom: 20px;
+    }
+
+    .content-text-one{
+        height: auto;
+        display: block;
+        background-color: #3CDDF3;
+        padding: 20px 0px;
+    }
+
+    .number-title {
+        background-color: #c898ec;
+        border-radius: 20px 0px 0px 20px;
+    }
+    .text-one{
+        width: auto;
+        padding-left: 20px;
+    }
+
+    .text-two{
+        padding: 20px;
+    }
+    .content-columns-one{
+        padding: 20px 0px 40px 40px;
+    }
 
     .content-text-bottom{
         background-color: #3CDDF3;
