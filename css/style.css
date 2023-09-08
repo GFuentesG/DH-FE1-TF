@@ -110,6 +110,140 @@ a:hover{
     left: 42.5%;
 }
 
+.content-columns-one{
+    background-color: #FAFAFA;
+    padding: 20px 40px
+}
+
+.columns-one-section, .descriptions {
+    display: flex;
+}
+
+.columns-one-section {
+    justify-content: center;
+}
+.descriptions{
+    flex-direction: column;
+}
+
+.number-title{
+    display: flex;
+}
+
+.number-title a {
+    padding: 10px 25px;
+    background-color: #8B48BF;
+    border-radius: 30px;
+    color: white;
+    font-weight: 700;
+}
+
+.number-title p {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    margin-left: 10px;
+    color: #323851;
+}
+
+.descriptions > p {
+    width: 400px;
+    margin-left: 80px;
+    color: #B3B2B7;
+}
+
+
+.content-text-one{
+    height: 224px;
+    background-color: #8B48BF;
+    color: white;
+    align-items: center;
+    display: flex;
+    margin-top: 50px;
+}
+
+.text-one {
+    font-size: 40px;
+    padding-left: 100px;
+    font-weight: 700;
+    line-height: 47px;
+    width: 1200px
+    
+}
+
+.text-two {
+    font-size: 16px;
+    padding: 100px;    
+}
+
+.content-text-bottom{
+    height: 224px;
+    background-color: #8B48BF;
+    color: white;
+    align-items: center;
+    display: flex;
+}
+
+.content-text-bottom p {
+    font-size: 40px;
+    padding-left: 100px;
+    font-weight: 500;
+    line-height: 47px;
+    width: 500px;
+}
+/*Estilos Footer*/
+footer {
+    background-color: #1E1E26;
+    color: white;
+    padding: 50px 100px;
+}
+
+.content-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.content-ft-politicas{
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+}
+
+.ft-logo-sn {
+    margin-bottom: 50px;
+}
+
+.ft-politicas a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.ft-inbox input{
+    border-radius: 50px;
+    padding: 10px;
+    gap: 10px;
+    border: none;
+}
+
+.ft-inbox button{
+    border-radius: 50px;
+    padding: 10px;
+    gap: 10px;
+    background-color: #8B48BF;
+    border: none;
+    width: 63px;
+    color: white;
+    margin-left: 10px;
+}
+
+.copyright {
+    text-align: end;
+    color: #8C8C94;
+    font-size: 12.5px;
+}
+
 @media(max-width:480px){
     header{
         display: flex;
@@ -154,6 +288,97 @@ a:hover{
     }
     .mejoresdelmes{
         font-size: 1.3rem;
+    }
+
+    .columns-one-section{
+        display: block;
+    }
+
+    .descriptions > p{
+        width: auto;
+        margin-right: 20px;
+    }
+    .descriptions{
+        margin-bottom: 20px;
+    }
+
+    .content-text-one{
+        height: auto;
+        display: block;
+        background-color: #3CDDF3;
+        padding: 20px 0px;
+    }
+
+    .number-title {
+        background-color: #c898ec;
+        border-radius: 20px 0px 0px 20px;
+    }
+    .text-one{
+        width: auto;
+        padding-left: 20px;
+    }
+
+    .text-two{
+        padding: 20px;
+    }
+    .content-columns-one{
+        padding: 20px 0px 40px 40px;
+    }
+
+    .content-text-bottom{
+        background-color: #3CDDF3;
+        height: auto;
+        padding: 20px 0px;
+    }
+
+    .content-text-bottom p {
+        padding-left: 0px;
+        width: 210px;
+        text-align: center;
+        margin: auto;
+    }
+
+    footer {
+        padding: 30px 50px;
+    }
+
+    .ft-logo-politicas {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .content-footer{
+        flex-direction: column-reverse;
+    }
+
+    .content-footer div{
+        padding: 10px;
+    }
+
+    .ft-inbox input{
+        width: 200px;
+    }
+
+    .ft-inbox {
+        text-align: center;
+    }
+
+    .ft-logo-sn {
+        text-align: center;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+    .ft-sn{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .copyright{
+        text-align: center;
+    }
+
+    .content-ft-politicas{
+        width: auto;
     }
 }
 
